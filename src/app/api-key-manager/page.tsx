@@ -1,6 +1,6 @@
 "use client";
 
-import { App } from "@oneloop-hq/frontend-react-sdk";
+import { OneloopApiKeyManager } from "@oneloop-hq/frontend-react-sdk";
 import { useEffect, useState } from "react";
 import { getData } from "@/app/api-key-manager/actions";
 
@@ -26,13 +26,13 @@ export default function Page() {
       }}
     >
       {linkToken ? (
-        <App
+        <OneloopApiKeyManager
           accentColor="#ADFF85"
           description="Create a key that unlocks full API access, enabling extensive interaction with your account. Learn more"
           textColor="#000000"
           title="Standard keys"
           token={linkToken}
-          isDev
+          darkMode={false}
         />
       ) : (
         <div>Loading...</div>
