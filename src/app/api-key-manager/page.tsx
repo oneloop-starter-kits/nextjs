@@ -4,8 +4,8 @@ import { OneloopApiKeyManager } from "@oneloop-hq/react";
 import { useEffect, useState } from "react";
 import { getData } from "@/app/api-key-manager/actions";
 
-const WORKSPACE_ID = "ws_69d96bdf84fb435caef375eaacc08c49";
-const CURRENT_CUSTOMER_ID = "customer-aahan";
+const WORKSPACE_ID = "workspace_id";
+const CURRENT_CUSTOMER_ID = "customer_id";
 
 export default function Page() {
   const [linkToken, setLinkToken] = useState<string>("");

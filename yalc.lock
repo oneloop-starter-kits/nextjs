@@ -1,9 +1,0 @@
-{
-  "version": "v1",
-  "packages": {
-    "@oneloop-hq/nextjs": {
-      "signature": "4dacb8117048452c45eccdd54f4fe20d",
-      "file": true
-    }
-  }
-}
