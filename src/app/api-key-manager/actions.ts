@@ -1,7 +1,7 @@
 "use server";
 
 export async function getData(workspaceId: string, customerId: string) {
-  const res = await fetch("https://dev.oneloop.ai/api/v1/link-token", {
+  const res = await fetch("https://prod.oneloop.ai/api/v1/link-token", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
