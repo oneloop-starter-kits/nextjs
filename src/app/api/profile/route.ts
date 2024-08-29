@@ -2,6 +2,8 @@ import { useOneloop } from "@oneloop-hq/nextjs";
 
 export const dynamic = "force-dynamic"; // defaults to auto
 
+const oneloopSdkKey = process.env.ONELOOP_SDK_KEY ?? "";
+
 // eslint-disable-next-line
 export const GET = useOneloop(
   async (request: Request) => {
@@ -12,7 +14,7 @@ export const GET = useOneloop(
     });
   },
   {
-    sdkKey: "ok_24117c8fde624df1bae439e28b4bd9b7",
+    sdkKey: oneloopSdkKey,
     scopes: [
       {
         representation: "profile",

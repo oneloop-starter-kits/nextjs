@@ -5,7 +5,7 @@ This is a starter kit to get you started with Oneloop on Next.js
 ## Dependancies
 
 - node.js (>=18)
-- Oneloop account - Get free account [here](https://app.openloop.ai/register)
+- Oneloop account - Get free account [here](https://dashboard.openloop.ai/)
 
 ## Setup your local environment
 
@@ -27,10 +27,10 @@ git clone https://github.com/<your_github_username>/oneloop-nextjs-app-router-st
 
 Rename `.env.local.sample` to `.env.local`
 
-Update the file with your application settings. These can be found within the backend application details within the Kinde dashboard
+Update the file with your application settings. These can be found within the backend application details within the Oneloop dashboard
 
 ```
-ONELOOP_CLIENT_TOKEN=<your_oneloop_api_key>
+ONELOOP_SDK_KEY=<your_oneloop_sdk_key>
 ```
 
 ## Setup Oneloop
@@ -54,4 +54,4 @@ open `http://localhost:3000/api-key-manager` in your browser
 
 # Resources
 
-- [Oneloop Next.js SDK Docs](https://docs.oneloop.ai/documentation/introduction/)
+- [Oneloop Next.js SDK Docs](https://docs.oneloop.ai/)

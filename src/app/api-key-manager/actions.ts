@@ -5,7 +5,7 @@ export async function getData(workspaceId: string, customerId: string) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${process.env.ONELOOP_CLIENT_TOKEN}`,
+      Authorization: `Bearer ${process.env.ONELOOP_SDK_KEY}`,
     },
     body: JSON.stringify({
       customerId,
