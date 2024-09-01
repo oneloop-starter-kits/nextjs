@@ -19,8 +19,6 @@ export const GET = oneloop.auth(
         read: true,
       },
     ],
-  },
-  {
     onInvalidKey: (req, err) => {
       return new Response("Invalid API Key Custom Fn", {
         status: 401,
