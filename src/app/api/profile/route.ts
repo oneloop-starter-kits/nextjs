@@ -1,11 +1,10 @@
-import { useOneloop } from "@oneloop-hq/nextjs";
+import { createOneloop } from "@oneloop-hq/nextjs";
 
 export const dynamic = "force-dynamic"; // defaults to auto
 
-const oneloopSdkKey = process.env.ONELOOP_SDK_KEY ?? "";
+const oneloop = createOneloop(process.env.ONELOOP_SDK_KEY ?? "");
 
-// eslint-disable-next-line
-export const GET = useOneloop(
+export const GET = oneloop.auth(
   async (request: Request) => {
     return new Response("Profile Endpoint Authenticated", {
       headers: {
@@ -14,7 +13,6 @@ export const GET = useOneloop(
     });
   },
   {
-    sdkKey: oneloopSdkKey,
     scopes: [
       {
         representation: "profile",
