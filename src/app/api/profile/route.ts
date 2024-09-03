@@ -19,6 +19,10 @@ export const GET = oneloop.auth(
         read: true,
       },
     ],
+    usage: {
+      value: 100,
+      id: "profile-endpoint-usage",
+    },
     onInvalidKey: (req, err) => {
       return new Response("Invalid API Key Custom Fn", {
         status: 401,
@@ -28,7 +32,6 @@ export const GET = oneloop.auth(
       });
     },
     onError: (req, err) => {
-      console.log("Aahan", err.message);
       return new Response("Invalid API Key", {
         status: 401,
         headers: {

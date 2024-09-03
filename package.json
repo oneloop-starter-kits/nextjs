@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@oneloop-hq/nextjs": "^0.0.16",
-    "@oneloop-hq/react": "^1.0.0",
+    "@oneloop-hq/nextjs": "^0.0.17",
+    "@oneloop-hq/react": "^1.0.3",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18"
